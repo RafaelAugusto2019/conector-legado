@@ -1,13 +1,11 @@
 package br.com.boa.forma.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.boa.forma.entity.Cliente;
 import br.com.boa.forma.service.ConsultaBdSAFService;
+import br.com.boa.forma.service.EnviaMensagemSqsService;
 
 
 @RestController
@@ -15,11 +13,22 @@ public class ClienteController {
 	
 	@Autowired 
 	private ConsultaBdSAFService consultaBdSAFService;
+	
+	@Autowired
+	private EnviaMensagemSqsService enviaMensagemSqsService;
 		
 	@RequestMapping("/clientes")
-	public List<Cliente> retornaAllClientesBDSAF(){
+	public Boolean retornaAllClientesBDSAF(){
+		
+		try {
+			
+			enviaMensagemSqsService.enviaMensagem(
+					consultaBdSAFService.getAllClientesDBSAF());
+			return true;
 
-		return consultaBdSAFService.getAllClientesDBSAF();
+		} catch (Exception e) {
+			return false;
+		}		
 		
 	}
 
