@@ -4,7 +4,7 @@ cloud:
       static: us-east-1
       auto: false
     credentials:
-      access-key: AKIA3ZGVXYFSJYGWCPHW
-      secret-key: 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
+      access-key: $SQS_ACCESS_KEY
+      secret-key: $SQS_SECRET_KEY
     end-point:
-      uri: https://sqs.us-east-1.amazonaws.com/810049585508/teste-teste
+      uri: $SQS_URL
