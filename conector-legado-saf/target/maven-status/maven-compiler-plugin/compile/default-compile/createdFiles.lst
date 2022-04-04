@@ -1,1 +1,7 @@
-br/com/boa/forma/ApiRestEnconfixApplication.class
+br/com/boa/forma/service/ConsultaBdSAFService.class
+br/com/boa/forma/entity/Cliente.class
+br/com/boa/forma/controller/ClienteController.class
+br/com/boa/forma/service/EnviaMensagemSqsService.class
+br/com/boa/forma/config/AwsSQSConfig.class
+br/com/boa/forma/ApiRestApplication.class
+br/com/boa/forma/repository/ClienteRepository.class

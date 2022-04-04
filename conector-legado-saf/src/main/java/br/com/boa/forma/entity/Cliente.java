@@ -50,5 +50,18 @@ public class Cliente implements Serializable{
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
+	
+	//Criar uma configuração para enviar um dado mais simples de manipular
+	@Override
+	public String toString() {
+		return "["
+				+ "carteirinhaId:" + carteirinhaId + ","
+				+ "nome:" + nome + ","
+				+ "cpf:" + cpf + ","
+				+ "dataNascimento:"+ dataNascimento
+				+ "]";
+	}
+	
+	
        
 }
