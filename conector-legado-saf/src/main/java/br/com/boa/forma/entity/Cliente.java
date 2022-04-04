@@ -51,15 +51,12 @@ public class Cliente implements Serializable{
 		this.dataNascimento = dataNascimento;
 	}
 	
-	//Criar uma configuração para enviar um dado mais simples de manipular
 	@Override
 	public String toString() {
-		return "["
-				+ "carteirinhaId:" + carteirinhaId + ","
+		return "carteirinhaId:" + carteirinhaId + ","
 				+ "nome:" + nome + ","
 				+ "cpf:" + cpf + ","
-				+ "dataNascimento:"+ dataNascimento
-				+ "]";
+				+ "dataNascimento:"+ dataNascimento;
 	}
 	
 	
