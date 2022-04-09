@@ -9,6 +9,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
 import br.com.boa.forma.entity.Cliente;
+import br.com.boa.forma.entity.Clientes;
 
 @Service
 public class EnviaMensagemSqsService {
@@ -19,7 +20,7 @@ public class EnviaMensagemSqsService {
 	    @Value("${cloud.aws.end-point.uri}")
 	    private String endpoint;
 	
-	public void enviaMensagem(List<Cliente> listaClientes) {
+	public void enviaMensagem(Clientes listaClientes) {
 		queueMessagingTemplate.send(endpoint, MessageBuilder.withPayload(listaClientes).build());
 	}
 
