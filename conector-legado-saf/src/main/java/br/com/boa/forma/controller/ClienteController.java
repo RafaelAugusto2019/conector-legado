@@ -24,17 +24,19 @@ public class ClienteController {
 		
 	@RequestMapping("/enviar/clientes")
 	public String enviaListaDeClientesBDSAFParaSQS(){
-		
+								
 		try {
-			
+
 			enviaMensagemSqsService.enviarMensagemParaSQS(
 					consultaBdSAFService.getListaClientesDBSAF());
+
 			return "Lista de clientes enviada com sucesso";
 
 		} catch (Exception e) {
 			
 			logger.log(Level.WARNING, e.getMessage());
 			return "Erro ao enviar a lista de clientes";
+			
 		}		
 		
 	}

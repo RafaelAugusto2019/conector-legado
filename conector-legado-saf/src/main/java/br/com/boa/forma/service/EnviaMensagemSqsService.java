@@ -8,5 +8,4 @@ public interface EnviaMensagemSqsService {
 	
 	public void enviarMensagemParaSQS(List<Cliente> listaClientes) throws Exception;
 
-
 }
