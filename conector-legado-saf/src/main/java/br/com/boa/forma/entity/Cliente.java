@@ -53,10 +53,10 @@ public class Cliente implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "carteirinhaId:" + carteirinhaId + ","
-				+ "nome:" + nome + ","
-				+ "cpf:" + cpf + ","
-				+ "dataNascimento:"+ dataNascimento;
+		return "{\"carteirinhaId\": \"" + carteirinhaId + "\","
+				+ "\"nome\": \"" + nome + "\","
+				+ "\"cpf\": \"" + cpf + "\","
+				+ "\"dataNascimento\": \""+ dataNascimento+"\"}";
 	}
 	
 	

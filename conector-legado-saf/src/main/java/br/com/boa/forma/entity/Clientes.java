@@ -18,6 +18,14 @@ public class Clientes implements Serializable{
 
 	public void setListaClientes(List<Cliente> listaClientes) {
 		this.listaClientes = listaClientes;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return ""+listaClientes+"";
+	}
+
+
+	
 
 }
