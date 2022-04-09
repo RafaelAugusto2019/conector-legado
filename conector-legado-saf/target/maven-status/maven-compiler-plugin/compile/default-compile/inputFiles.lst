@@ -1,7 +1,10 @@
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/entity/Cliente.java
+/home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/entity/Clientes.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/controller/ClienteController.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/service/EnviaMensagemSqsService.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/service/ConsultaBdSAFService.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/config/AwsSQSConfig.java
+/home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/service/impl/ConsultaBdSAFServiceImpl.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/repository/ClienteRepository.java
 /home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/ApiRestApplication.java
+/home/rafael/Git/conector-legado-saf/conector-legado-saf/src/main/java/br/com/boa/forma/service/impl/EnviaMensagemSqsServiceImpl.java
