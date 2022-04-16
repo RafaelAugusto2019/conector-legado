@@ -1,11 +1,9 @@
 package br.com.boa.forma.service;
 
-import java.util.List;
-
-import br.com.boa.forma.entity.Cliente;
+import br.com.boa.forma.entity.Clientes;
 
 public interface EnviaMensagemSqsService {
 	
-	public void enviarMensagemParaSQS(List<Cliente> listaClientes) throws Exception;
+	public void enviarMensagemParaSQS(Clientes listaClientes) throws Exception;
 
 }
