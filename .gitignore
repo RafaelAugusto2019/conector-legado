@@ -16,7 +16,7 @@ replay_pid*
 
 ###Eclipse###
 
-.target/
+target/
 .settings/
 .project
 .classpath
